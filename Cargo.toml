@@ -1,0 +1,18 @@
+[package]
+name = "rest2mail"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lettre = "0.10"
+actix-rt = "2.7"
+actix-web = "4"
+tokio = { version = "1.21", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+openssl = { version = "0.10", features = ["vendored"] }
