@@ -1,0 +1,13 @@
+GET https://{{FQDN}}/
+Authorization: Bearer XXXXXX
+
+POST https://{{FQDN}}/send
+Authorization: Bearer XXXXXX
+Content-Type: application/json
+
+{
+    "from": "{{FROM_MAIL}}",
+    "to": "{{TO_MAIL}}",
+    "subject": "prueba",
+    "body": "<p>Cada día yo <strong>me quiero mas</strong></p>"
+}
